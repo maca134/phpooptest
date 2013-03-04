@@ -23,3 +23,5 @@ Tasks
 2. Create a new class that extends Datacache_Item and add cache expiration feature.
 
 3. Create a factory for Datacache
+
+This should take around an hour or so to complete.
