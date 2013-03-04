@@ -51,6 +51,7 @@ class Datacache_Driver_File implements Datacache_Driver {
     public function path($path = false) {
         if ($path === false)
             return $this->path;
+			
         $path = rtrim($path, DIRECTORY_SEPARATOR) . DIRECTORY_SEPARATOR;
         $this->path = $path;
     }
