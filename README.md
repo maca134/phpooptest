@@ -1,22 +1,9 @@
 PHP OOP Tasks
 =============
 
-This is a small caching package. It can be used in conjunction with many storage methods (file, memcache, mysql, etc)
+PHP OOP Boilerplate implementing cache with files and memcached module
 
-At the moment, it will only work with file storage. 
-
-Files
------
-
-* index.php                   - A simple example
-* bootstrap.php               - Class autoloader function
-* datacache.php               - The main caching class
-* datacache/item.php          - Class to store cached data
-* datacache/driver.php        - The cache driver interface
-* datacache/driver/file.php   - File storage class
-
-Tasks
------
+## Tasks
 
 1. Create a new driver for another storage method, this can be anything you like including (memcache, apc, mysql, etc)
 
@@ -24,4 +11,16 @@ Tasks
 
 3. Create a factory for Datacache
 
-This should take around an hour or so to complete.
+## Install dependencies
+
+### Install Memcached module on PHP
+
+See: [PHP.net: Memcached](http://php.net/manual/en/book.memcached.php)
+
+## Installation
+
+You can either clone the project, download the project, or just copy & paste the files into apache document root (or virtual server directory).
+
+## Configuration
+
+Make sure cache directory is writable when using file cache.
